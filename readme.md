@@ -35,7 +35,18 @@ APP_URL="https://some.app"
 APP_TOKEN="123"
 ```
 
+#### Export
 
+```bash
+php ./export.php
+```
+
+Export data descriptors from a K-Link.
+
+The exported data is saved into a file, called `publications.php`, inside the `data` folder.
+Each item is also saved as separate json file under `./data/dumps`.
+
+> The script does not download the file content, but only the metadata
 
 #### Import
 
