@@ -1,0 +1,4 @@
+vendor
+.env
+.export.env
+.import.env

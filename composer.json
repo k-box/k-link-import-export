@@ -1,0 +1,27 @@
+{
+    "name": "kbox/klink-import-export",
+    "description": "Collection of scripts for exporting and importing data from/to K-Links",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Alessio",
+            "email": "alessio@oneofftech.xyz"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/k-box/k-search-client-php.git"
+        }
+    ],
+    "require": {
+        "k-box/k-search-client-php": "3.3.*",
+        "php-http/guzzle6-adapter": "^1.1",
+        "guzzlehttp/guzzle": "^6.3",
+        "nesbot/carbon": "^1.27",
+        "vlucas/phpdotenv": "^3.4"
+    },
+    "autoload": {
+        
+	}
+}
