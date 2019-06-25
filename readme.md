@@ -12,10 +12,40 @@ A set of scripts for import/export document descriptors to/from a K-Link.
 
 ### Usage
 
-...
+Download the latest release (or clone the repository) and execute
 
-> The script does not download the file content, but only the metadata
+```
+composer install
+```
 
+Copy the `.env.example` file into `.export.env` and `.import.env`. 
+The environment files contain the configuration to authenticate to a K-Link. The configuration
+is split between export and import as it might be used to transfer data from one K-Link to another.
+
+Insert the respective configuration options into the environment files
+
+```conf
+# The URL of the K-Link instance
+KLINK_URL="https://some.klink"
+
+# The URL of the application that will perform the requests
+APP_URL="https://some.app"
+
+# The token for the application used to perform requests
+APP_TOKEN="123"
+```
+
+
+
+#### Import
+
+```bash
+php ./import.php
+```
+
+Import data descriptors into a K-Link.
+
+Import the data from `data/publications.php` to the specified K-Link.
 
 ## License
 
